@@ -28,13 +28,20 @@ header > h1 {
 .square {
     width: 100px;
     height: 100px;
-    border: 1px solid red;
 }
+
+section:nth-child(5) .wrapper .animation-container {
+    height: 140px;
+    position: relative;
+} 
 
 .small-square {
     width: 60px;
     height: 60px;
-    margin: 20px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translate(-10%, -50%);
 }
 
 .image-animation-container {
@@ -70,4 +77,63 @@ header > h1 {
     font-size: 18px;
     color: black;
     text-align: center;
+}
+
+            /* Animazioni */
+
+/* Animazione 2 */
+
+section:nth-child(1) .wrapper .square {
+    border: 1px solid red;
+    transition: all 2s ease 0s;
+}
+
+section:nth-child(1) .wrapper .square:hover {
+    background-color: red;
+}
+
+/* Animazione 2 */
+
+section:nth-child(2) .wrapper .square {
+    transition: all 3s ease 0s;
+}
+
+section:nth-child(2) .wrapper .square:active {
+    width: 100%;
+}
+
+/* Animazione 3 */
+
+section:nth-child(3) .wrapper .square {
+    transition: all 5s ease 0s;
+}
+
+section:nth-child(3) .wrapper .square:hover {
+    border-radius: 50%;
+}
+
+/* Animazione 4 */
+
+section:nth-child(4) .wrapper .square {
+    transition: all 3s ease 0s;
+}
+
+section:nth-child(4) .wrapper .square:hover {
+    background-color: transparent;
+}
+
+/* Animazione 5 */
+
+section:nth-child(5) .wrapper .small-square {
+    transition: all 3s ease 0s;
+}
+
+section:nth-child(5) .wrapper .small-square:hover{
+    width: 100px;
+    height: 100px;
+}
+
+section:nth-child(5) .wrapper .small-square:active{
+    width: 20px;
+    height: 20px;
 }
