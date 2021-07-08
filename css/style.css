@@ -44,6 +44,10 @@ section:nth-child(5) .wrapper .animation-container {
     transform: translate(-10%, -50%);
 }
 
+.image-animation img {
+    width: 40%;
+}
+
 .image-animation-container {
     width: 100%;
     background-color: rgb(243, 243, 243);
@@ -51,16 +55,20 @@ section:nth-child(5) .wrapper .animation-container {
     margin: 10px 0;
 }
 
-.image-animation img {
-    width: 40%;
-}
+section:nth-child(9) .wrapper .image-animation-container {
+    height: 400px;
+    position: relative;
+} 
 
 #image-scale {
-    padding: 50px 100px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
 }
 
 #image-scale img {
-    width: 28%;
+    width: 30%;
 }
 
 .icon {
@@ -137,3 +145,49 @@ section:nth-child(5) .wrapper .small-square:active{
     width: 20px;
     height: 20px;
 }
+
+/* Animazione 6 */
+
+section:nth-child(6) .wrapper .image-animation img:hover {
+    filter:grayscale(1)
+}
+
+/* Animazione 7 */
+
+section:nth-child(7) .wrapper .image-animation img {
+    transition: all 3s ease-in-out 0s;
+    filter: none;
+}
+
+section:nth-child(7) .wrapper .image-animation img:hover {
+    transition: all 3s ease-in-out 0s;
+    filter:grayscale(1)
+}
+
+/* Animazione 8 */
+
+section:nth-child(8) .wrapper .image-animation img {
+    transition: all 3s ease-in-out 0s;
+    filter: none;
+}
+
+section:nth-child(8) .wrapper .image-animation img:hover {
+    transition: all 2.5s ease-in-out 0s;
+    filter: sepia(0.8);
+    border-radius: 20px
+}
+
+/* Animazione 9 */
+
+section:nth-child(9) .wrapper .image-animation-container img {
+    transition: all 2.5s ease-in-out 0s;
+    filter: none;
+}
+
+section:nth-child(9) .wrapper #image-scale img:hover {
+    width: 55%;
+    border-radius: 25px;
+    filter: grayscale(0.8);
+}
+
+/* Animazione 10 */
